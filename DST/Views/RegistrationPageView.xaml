@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DST.Views.RegistrationPageView">
+    <ContentPage.Content>
+        <StackLayout x:Name="mainSL" Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="20">
+
+            <Label x:Name="title" Text="Авторизация" TextColor="Black" TextTransform="Uppercase"
+                    HorizontalOptions="CenterAndExpand" 
+                    FontFamily="Open Sans"
+                    FontSize="Large"
+            />
+
+
+            <Label Text="Логин" TextColor="Black" FontFamily="Open Sans" FontSize="Title"/>
+            <Entry x:Name="loginEntry" Placeholder="Введите логин или адрес эл.почты" PlaceholderColor="Gray" TextColor="Black" ClearButtonVisibility="WhileEditing"/>
+
+
+            <Label Text="Пароль" TextColor="Black"  FontFamily="Open Sans" FontSize="Title"/>
+            <Entry x:Name="passEntry" Placeholder="Введите пароль" PlaceholderColor="Gray" IsPassword="True" TextColor="Black" ClearButtonVisibility="WhileEditing"/>
+
+            <Label Text="Повтор пароля" TextColor="Black" FontFamily="Open Sans" FontSize="Title"/>
+            <Entry x:Name="repeatPassEntry" Placeholder="Введите пароль еще раз" PlaceholderColor="Gray" IsPassword="True" TextColor="Black" ClearButtonVisibility="WhileEditing"/>
+
+            <Button x:Name="regBtn" Text="Зарегистрироваться" Clicked="regBtn_Clicked" BackgroundColor="#005a97" TextColor="GhostWhite"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
